@@ -1,0 +1,59 @@
+/* WEBSITE PALETTE:
+Yellow Green Crayola [D0DB97]	
+Medium Sea Green [69B578]	
+Fern Green [3A7D44]	
+Forest Green Traditional [254D32]	
+Rich Black FOGRA 29 [181D27] */
+
+
+/* body "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif; */
+/* navbar 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace */
+
+@font-face {
+    font-family: 'Space Mono Regular' ;
+    src: url('fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype');
+}
+
+body{
+    font-family: 'Space Mono Regular', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    background-color: rgb(10, 25, 47);
+    /* scroll-margin-top: 5rem; */
+    color: white;
+}
+
+/* HEADER STYLING */
+.navbar{
+    width: 100%;
+    position: fixed;
+    margin-top: -10%;
+    background-color: white;
+}
+
+li{
+    list-style: none;
+    float: right;
+    padding: 1.5%;
+}
+.navbar a{
+    font-family: 'Space Mono Regular', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    text-decoration: none;
+    text-transform: lowercase;
+    color:#3A7D44;
+}
+/* order is link, visited, focus, hover, active */
+a:hover{
+    color: #69B578;
+    border: 1px solid rgb(100, 255, 218);
+}
+
+
+
+/* HOME STYLING */
+.home{
+    margin-top: 10%;
+}
+
+
+
+
+
