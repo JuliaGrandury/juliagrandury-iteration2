@@ -14,18 +14,11 @@ Rich Black FOGRA 29 [181D27] */
     src: url('fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype');
 }
 
-body{
-    font-family: 'Space Mono Regular', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
-    background-color: rgb(10, 25, 47);
-    /* scroll-margin-top: 5rem; */
-    color: white;
-}
 
-/* HEADER STYLING */
+/* HEADER STYLING - logo and navbar */
 .navbar{
     width: 100%;
     position: fixed;
-    margin-top: -10%;
     background-color: white;
 }
 
@@ -47,12 +40,33 @@ a:hover{
 }
 
 
-
-/* HOME STYLING */
+/* HOME PAGE STYLING */
+body{
+    width: 90%;
+    margin: 2em auto;
+    font-family: 'Space Mono Regular', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    background-color: rgb(10, 25, 47);
+    /* scroll-margin-top: 5rem; */
+    color: white;
+}
+h1{
+    color:white;
+    font-size: 80px;
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text", sans-serif;
+}
+h2{
+    color: rgb(100, 255, 218);
+    font-size: 16px;
+}
+.greyheader{
+    color: #807e81;
+}
 .home{
     margin-top: 10%;
 }
-
+.home h1, h2{
+    line-height: 0.5 em;
+}
 
 
 
