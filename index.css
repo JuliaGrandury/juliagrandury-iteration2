@@ -5,7 +5,6 @@ Fern Green [3A7D44]
 Forest Green Traditional [254D32]	
 Rich Black FOGRA 29 [181D27] */
 
-
 /* body "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif; */
 /* navbar 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace */
 
@@ -14,18 +13,18 @@ Rich Black FOGRA 29 [181D27] */
     src: url('fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype');
 }
 
-
 /* HEADER STYLING - logo and navbar */
-.navbar{
-    width: 100%;
+.navbar ul{
     position: fixed;
     background-color: white;
+    width: 100%;
+    margin-top: -8%;
+    text-align: right;
 }
-
 li{
     list-style: none;
-    float: right;
-    padding: 1.5%;
+    padding: 1%;
+    float: left;
 }
 .navbar a{
     font-family: 'Space Mono Regular', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
@@ -33,21 +32,18 @@ li{
     text-transform: lowercase;
     color:#3A7D44;
 }
-/* order is link, visited, focus, hover, active */
-a:hover{
-    color: #69B578;
-    border: 1px solid rgb(100, 255, 218);
+a:hover{ /* order is link, visited, focus, hover, active */
+    color: rgb(100, 255, 218);
 }
-
 
 /* HOME PAGE STYLING */
 body{
-    width: 90%;
-    margin: 2em auto;
+    width: 95%;
+    margin: 1em auto;
     font-family: 'Space Mono Regular', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
     background-color: rgb(10, 25, 47);
     /* scroll-margin-top: 5rem; */
-    color: white;
+    color: lightgrey;
 }
 h1{
     color:white;
@@ -65,7 +61,7 @@ h2{
     margin-top: 10%;
 }
 .home h1, h2{
-    line-height: 0.5 em;
+    line-height: 32px;
 }
 
 
