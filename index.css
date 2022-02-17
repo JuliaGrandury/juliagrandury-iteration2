@@ -1,9 +1,26 @@
-/* WEBSITE PALETTE:
-Yellow Green Crayola [D0DB97]	
-Medium Sea Green [69B578]	
-Fern Green [3A7D44]	
-Forest Green Traditional [254D32]	
-Rich Black FOGRA 29 [181D27] */
+/* GENERAL STYLING */
+
+    /* WEBSITE PALETTE:
+    Yellow Green Crayola [D0DB97]	
+    Medium Sea Green [69B578]	
+    Fern Green [3A7D44]	
+    Forest Green Traditional [254D32]	
+    Rich Black FOGRA 29 [181D27] */
+
+
+/* TYPOGRAPHY */
+
+
+/* HEADER AND MAIN NAVIGATION */
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////// EDIT EVERYTHING AFTER THIS //////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
 
 /* body "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif; */
 /* navbar 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace */
@@ -31,7 +48,24 @@ li{
     text-decoration: none;
     text-transform: lowercase;
     color:#3A7D44;
+    /* trying to animate underline of links */
+    /* transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s; */
 }
+
+.navbar a::after{
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+.navbar a:hover::after, .navbar a:focus::after{
+    transform: scale(1);
+}
+
+
 a:hover{ /* order is link, visited, focus, hover, active */
     color: rgb(100, 255, 218);
 }
