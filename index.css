@@ -1,17 +1,46 @@
-/* GENERAL STYLING */
+* {
+    box-sizing: border-box;
+}
 
-    /* WEBSITE PALETTE:
-    Yellow Green Crayola [D0DB97]	
-    Medium Sea Green [69B578]	
-    Fern Green [3A7D44]	
-    Forest Green Traditional [254D32]	
-    Rich Black FOGRA 29 [181D27] */
+/* HEADER STYLING: LOGO AND NAVBAR */
+.logo{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-links li{
+    /* styling of the list elements*/
+    list-style: none;
+}
+.navbar-links li a{ 
+    /* styling of individual links (anchor tags) */
+    text-decoration: none;
+    color: #ccd6f6;
+    padding: 1rem;
+    display: block;
+}
+.navbar-links li:hover{
+    color:#64ffda;
+}
 
 
-/* TYPOGRAPHY */
-
-
-/* HEADER AND MAIN NAVIGATION */
+/* BODY STYLING */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgb(10, 25, 47);
+    color: lightgrey;
+}
 
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -21,68 +50,11 @@
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
-
-/* body "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif; */
-/* navbar 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace */
-
-@font-face {
-    font-family: 'Space Mono Regular' ;
-    src: url('fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype');
-}
-
-/* HEADER STYLING - logo and navbar */
-.navbar ul{
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    margin-top: -8%;
-    text-align: right;
-}
-li{
-    list-style: none;
-    padding: 1%;
-    float: left;
-}
-.navbar a{
-    font-family: 'Space Mono Regular', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
-    text-decoration: none;
-    text-transform: lowercase;
-    color:#3A7D44;
-    /* trying to animate underline of links */
-    /* transition-property: color;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s; */
-}
-
-.navbar a::after{
-    opacity: 1;
-    transform: scale(0);
-    transform-origin: center;
-}
-
-.navbar a:hover::after, .navbar a:focus::after{
-    transform: scale(1);
-}
-
-
-a:hover{ /* order is link, visited, focus, hover, active */
-    color: rgb(100, 255, 218);
-}
-
-/* HOME PAGE STYLING */
-body{
-    width: 95%;
-    margin: 1em auto;
-    font-family: 'Space Mono Regular', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
-    background-color: rgb(10, 25, 47);
-    /* scroll-margin-top: 5rem; */
-    color: lightgrey;
-}
 h1{
     color:white;
     font-size: 80px;
-    font-family: "Calibre","Inter","San Francisco","SF Pro Text", sans-serif;
+    font-family: 'Yeseva One', cursive;
+    letter-spacing: 0.25rem;
 }
 h2{
     color: rgb(100, 255, 218);
@@ -91,12 +63,9 @@ h2{
 .greyheader{
     color: #807e81;
 }
-.home{
-    margin-top: 10%;
-}
-.home h1, h2{
-    line-height: 32px;
-}
+
+
+
 
 
 
