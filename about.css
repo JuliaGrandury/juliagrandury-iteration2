@@ -1,0 +1,40 @@
+.container{
+    /* first value top bottom, second value left right */
+    margin: 3rem 5rem; 
+    flex-direction: row;
+    display: inline-flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic{
+    border-color: white;
+    max-width: 400px;
+    width: 50%;
+}
+
+.pic img{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text{
+    width: 50%;
+    text-align: center;
+    padding: 2rem;
+}
+
+.resume-button{
+    background-color:  rgb(10, 25, 47);
+    border: solid 1px #64ffda;
+    border-radius: 2px;
+    padding: 6px 8px;
+    margin: 2rem 0;
+}
+
+.resume-button a{
+    text-decoration: none;
+    color: rgb(100, 255, 218);
+}
