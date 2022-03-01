@@ -29,8 +29,8 @@
     padding: 1.5rem;
     display: block;
     font-size: 13px;
-    font-family: 'Roboto Mono', monospace;
     font-weight: 300;
+    font-family: 'Roboto Mono', monospace;
     letter-spacing: 2px;
 }
 .navbar-links li a:hover{
@@ -75,6 +75,12 @@ h2{
 }
 
 
+/* FOOTER STYLING */
+footer p{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+}
 
 
 
