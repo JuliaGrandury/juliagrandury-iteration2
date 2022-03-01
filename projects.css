@@ -1,0 +1,14 @@
+.card-container{
+    border: solid 1px #64ffda;
+    width: 80%;
+    position: absolute;
+    margin: 2% 10%;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: solid 1px #64ffda;
+    padding: 2rem;
+}
