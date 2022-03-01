@@ -4,6 +4,8 @@ h2{
     padding-bottom: 1rem;
     font-size: 40px;
     color: #ccd6f6;
+    letter-spacing: 0.3rem;
+    text-transform: lowercase;
 }
 
 /* BIOGRAPHY SECTION STYLING */
@@ -45,6 +47,8 @@ h2{
 }
 
 .resume-button a{
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 0.1rem;
     text-decoration: none;
     color: rgb(100, 255, 218);
 }
