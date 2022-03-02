@@ -46,7 +46,7 @@
 }
 
 
-/* BODY STYLING */
+/* BODY STYLING: HEADERS AND ABOUT */
 body{
     margin: 0;
     padding: 0;
@@ -54,28 +54,48 @@ body{
     background-color: rgb(10, 25, 47);
     color: #8892b0;
 }
-
 .home-container{
     margin: 4rem 8rem 0rem;
+}
+h1{
+    color:rgba(255, 255, 255, 0.9);
+    font-family: 'Raisonne', sans-serif;
+    font-size: 54px;
+    letter-spacing: 0.25rem;
+    margin-top: -0.25rem;
+}
+h2{
+    color: rgb(100, 255, 218);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+}
+.typewriter-header{
+    color: #8892b0;
+    margin-top: -3rem;
+    /* typewriter effect */
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3.5s steps(80, end)
+}
+@keyframes typing {
+    from { width:0 }
+    to { width: 100% }
 }
 
 
 /* CONTACT SECTION STYLING */
 .contact{
-    margin: 5% 0%;
     display: flex;
     align-items: center;
-    border: solid 1px green;
+    margin: 5% 0 5%;
 }
 .contact ul{
     display: flex;
     width: 100%;
-    /* border: solid 1px yellow; */
 }
 .contact li{
     list-style: none;
-    /* padding: 0 10px; */
-    /* border: solid 1px red; */
+    padding: 0 10px;
 }
 .contact li a{
     text-decoration: none;
@@ -83,9 +103,11 @@ body{
 }
 
 .resume-button{
-    background-color:  rgb(10, 25, 47);
+    background-color:rgb(10, 25, 47);
     border: solid 1px #64ffda;
-    border-radius: 2px;
+    border-radius: 3px;
+    margin-left: -3rem;
+    margin-right: 0.75rem;
     padding: 8px 8px;
 }
 .resume-button a{
@@ -94,10 +116,17 @@ body{
     text-decoration: none;
     color: rgb(100, 255, 218);
 }
+.resume-button:hover{
+    background-color: rgba(100, 255, 218, 0.4);
+}
 .contact-icons{
     width: 35px;
+    padding: 5px;
     border: solid 1px #64ffda;
-    border-radius: 2px;
+    border-radius: 3px;
+}
+.contact-icons:hover{
+    background-color: rgba(100, 255, 218, 0.4);
 }
 
 
@@ -107,24 +136,6 @@ body{
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-
-h1{
-    color:white;
-    font-family: 'Raisonne', sans-serif;
-    font-size: 65px;
-    letter-spacing: 0.25rem;
-    line-height: 30%;
-}
-h2{
-    color: rgb(100, 255, 218);
-    font-family: 'Roboto Mono', monospace;
-    font-size: 16px;
-}
-#greyheader{
-    color: #8892b0;
-}
-
-
 /* FOOTER STYLING */
 footer p{
     text-align: center;
@@ -132,6 +143,11 @@ footer p{
     font-weight: 300;
 }
 
+/* @media screen and (max-width:400px){
+    h1{
+        font-size: smaller;
+    }
+} */
 
 
 
