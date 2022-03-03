@@ -1,22 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 .contact-form{
     text-align: center;
     margin-top: 5%;
 }
 
+
 .contact-buttons{
-    border: 1px solid green;
-    display: flex;
-    align-items: center;
+    margin-bottom: 3rem;
 }
 .contact-buttons ul{
     display: flex;
     width: 100%;
     justify-content: center;
+    margin-top: 2rem;
 }
 .contact-buttons li{
     list-style: none;
-    padding: 0 10px;
-    border: 1px solid yellow;
 }
 .contact-buttons li a{
     text-decoration: none;

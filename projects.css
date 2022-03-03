@@ -1,14 +1,58 @@
+h1{
+    text-align: center;
+    margin-top: 3.5rem;
+    padding-bottom: 1rem;
+    font-size: 40px;
+    color: #ccd6f6;
+    letter-spacing: 0.3rem;
+    font-family: 'Raisonne', sans-serif;
+}
+
 .card-container{
-    border: solid 1px #64ffda;
-    width: 80%;
-    position: absolute;
-    margin: 2% 10%;
-    display: inline-flex;
+    width: 90%;
+    margin: 2% 5%;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .card{
+    width: 30%;
+    margin: 0.5rem 1rem;
     border: solid 1px #64ffda;
     padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.card img{
+    width: 100%;
+    object-fit: cover;
+}
+.card:hover{
+    background-color: rgba(100, 255, 218, 0.2);
+}
+#githubcard{
+    border: none;
+}
+#githubcard:hover{
+    background-color: rgb(10, 25, 47);
+}
+
+
+
+
+/* STYLING OF GITHUB BUTTON */
+.github-button{
+    background-color:rgb(10, 25, 47);
+    border: solid 1px #64ffda;
+    border-radius: 3px;
+    padding: 8px 8px;
+}
+.github-button a{
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    color: rgb(100, 255, 218);
+}
+.github-button:hover{
+    background-color: rgba(100, 255, 218, 0.4);
 }

@@ -40,6 +40,7 @@ h2{
     min-width: 400px;
     text-align: center;
     padding: 2rem;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .resume-button{
@@ -64,6 +65,7 @@ h2{
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 .interests-container{
     padding: 0 1rem; 
+    margin-bottom: 1rem;
     flex-direction: row;
     display: flex;
     flex-flow: row wrap;
@@ -76,14 +78,9 @@ h2{
     padding: 1rem;
     border: solid 3px #233554;
 }
-
-.card-image{
-    height: 60%;
+.interest-card img{
     width: 100%;
-}
-.card-image img{
-    width: 100%;
-    height: 100%;
+    height: 50%;
     object-fit: cover;
     border-radius: 2px;
 }
@@ -106,3 +103,11 @@ h2{
     color: #e6f1ff;
 }
 
+
+/* To make adaptable to smaller windows */
+@media screen and (max-width:600px){
+    p{
+        font-size: 14px;
+    }
+
+}
