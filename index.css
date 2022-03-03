@@ -143,11 +143,40 @@ footer p{
     font-weight: 300;
 }
 
-/* @media screen and (max-width:400px){
+/* To adapt to mobile sizes */
+@media screen and (max-width:600px){
     h1{
-        font-size: smaller;
+        font-size: 20px;
     }
-} */
+    h2{
+        font-size: 14px;
+        white-space: pre-wrap;
+    }
+    .typewriter-header{
+        margin: 0;
+        overflow: scroll;
+    }
+    .about p{
+        font-size: 14px;
+    }
+    .contact{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .contact ul{
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    .contact li {
+        margin: 1rem 0rem;
+        justify-content: center;
+    }
+    .resume-button{
+        margin-left: 0;
+    }
+}
 
 
 
