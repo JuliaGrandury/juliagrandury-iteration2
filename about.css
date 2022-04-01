@@ -69,7 +69,7 @@ h2{
     flex-direction: row;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .card{
     flex: 0 1 30%;
