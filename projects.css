@@ -7,6 +7,11 @@ h1{
     letter-spacing: 0.3rem;
     font-family: 'Raisonne', sans-serif;
 }
+h2{
+    margin-bottom: 1rem;
+}
+
+
 
 .card-container{
     width: 90%;
@@ -18,16 +23,58 @@ h1{
 .card{
     font-size: 14px;
     width: 30%;
-    margin: 0.5rem 1rem;
+    margin: 1rem 1rem;
     border: solid 1px #64ffda;
     border-radius: 3px;
     padding: 2rem;
-    align-items: center;
-    justify-content: center;
 }
-.card:hover{
-    background-color: rgba(100, 255, 218, 0.2);
+/* .card:hover{
+    background-color: rgba(6, 7, 7, 0.2);
+} */
+.card img{
+    margin-top: 2rem;
+    max-width: 100%;
+    max-height: 100%;
+    /* object-fit: contain; */
 }
+@media only screen and (max-width: 1200px) and (min-width:920px){
+    .card{
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 920px){
+    .card{
+        width: 100%;
+    }
+}
+
+
+
+
+/* CODE BUTTONS STYLING */
+.code-buttons{
+    margin-top: 1rem;
+}
+.code-buttons button{
+    background-color:rgb(10, 25, 47);
+    border: solid 1px #64ffda;
+    border-radius: 3px;
+    margin-right: 0.75rem;
+    padding: 7px 10px;
+}
+.code-buttons a{
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    color: rgb(100, 255, 218);
+}
+.code-buttons button:hover{
+    background-color: rgba(100, 255, 218, 0.4);
+}
+
+
+
+/* SPECIFIC GTIHUB CARD */
 #githubcard{
     border: none;
 }
