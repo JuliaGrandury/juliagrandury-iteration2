@@ -8,18 +8,21 @@
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 /* HEADER STYLING: LOGO AND NAVBAR */
 .logo{
     font-size: 1.5rem;
     margin: 0.75rem;
+    color: #0a192f;
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.75rem 0.75rem;
+    padding: 0.5rem 0.75rem;
 }
 .navbar-links ul{
     margin: 0;
@@ -35,8 +38,7 @@
     text-decoration: none;
     color: #ccd6f6;
     padding: 1.5rem;
-    /* display: block; */
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 300;
     font-family: 'Roboto Mono', monospace;
     letter-spacing: 2px;
@@ -48,27 +50,33 @@
 
 /* BODY STYLING: HEADERS AND ABOUT */
 body{
-    margin: 0;
-    padding: 0;
     font-family: 'Roboto Mono', monospace;
-    background-color: rgb(10, 25, 47);
+    background-color: #0a192f;
     color: #8892b0;
 }
 .home-container{
     margin: 4rem 8rem 0rem;
 }
 h1{
-    color:rgba(255, 255, 255, 0.9);
+    color:#ffffffe6;
     font-family: 'Raisonne', sans-serif;
     font-size: 54px;
     letter-spacing: 0.25rem;
-    margin-top: -0.25rem;
+    line-height: 7rem;
+    /* margin-top: -0.25rem; */
 }
 h2{
-    color: rgb(100, 255, 218);
+    color: #64ffda;
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
 }
+.about a{
+    color: inherit;
+}
+.about a:hover{
+    color: #64ffda;
+}
+
 .typewriter-header{
     color: #8892b0;
     margin-top: -3rem;
@@ -87,7 +95,7 @@ h2{
 .contact{
     display: flex;
     align-items: center;
-    margin: 5% 0 5%;
+    margin: 5% 0% 5%;
 }
 .contact ul{
     display: flex;
@@ -95,7 +103,7 @@ h2{
 }
 .contact li{
     list-style: none;
-    padding: 0 10px;
+    padding-right: 10px;
 }
 .contact li a{
     text-decoration: none;
@@ -106,7 +114,6 @@ h2{
     background-color:rgb(10, 25, 47);
     border: solid 1px #64ffda;
     border-radius: 3px;
-    margin-left: -3rem;
     margin-right: 0.75rem;
     padding: 8px 8px;
 }
