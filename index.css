@@ -55,7 +55,9 @@ body{
     color: #8892b0;
 }
 .home-container{
-    margin: 4rem 8rem 0rem;
+    width: 90%;
+    /* first is top, second is right left, third is bottom */
+    margin: 4rem 5% 8rem;
 }
 h1{
     color:#ffffffe6;
@@ -63,7 +65,6 @@ h1{
     font-size: 54px;
     letter-spacing: 0.25rem;
     line-height: 7rem;
-    /* margin-top: -0.25rem; */
 }
 h2{
     color: #64ffda;
@@ -148,53 +149,40 @@ footer p{
     text-align: center;
     font-size: 13px;
     font-weight: 300;
+    margin-bottom: 3rem;
 }
 
-/* To adapt to mobile sizes */
-@media screen and (max-width:600px){
-    h1{
-        font-size: 20px;
-    }
-    h2{
-        font-size: 14px;
-        white-space: pre-wrap;
-    }
+
+
+@media only screen and (max-width: 1020px) {
+    /* typewriter effect is cut off*/
     .typewriter-header{
-        margin: 0;
-        overflow: scroll;
+        display: none;
     }
-    .about p{
+}
+
+@media only screen and (max-width: 700px) {
+    .home-container{
+        width: 80%;
+        margin: 2rem 10%;
+    }
+    h1{
+        font-size: 30px;
+        line-height: normal;
+    }
+    .about{
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .home-container p{
+        text-align: justify;
         font-size: 14px;
     }
-    .contact{
-        width: 100%;
-        margin: 0;
-        padding: 0;
+    .contact button{
+        display: none;
     }
-    .contact ul{
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
-    }
-    .contact li {
-        margin: 1rem 0rem;
-        justify-content: center;
-    }
-    .resume-button{
-        margin-left: 0;
-    }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    /* ruleset for mobile devices: 320px - 480px */
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    /* ruleset for tablets: 320px - 480px */
-}
-
-@media only screen and (min-width: 769px) {
-    /* ruleset for desktop devices: 320px - 480px */
 }
 
 

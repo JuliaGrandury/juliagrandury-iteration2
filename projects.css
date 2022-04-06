@@ -12,7 +12,7 @@ h2{
 }
 
 
-
+/* STYLING OF CARDS */
 .card-container{
     width: 90%;
     margin: 2% 5%;
@@ -31,12 +31,6 @@ h2{
 /* .card:hover{
     background-color: rgba(6, 7, 7, 0.2);
 } */
-.card img{
-    margin-top: 2rem;
-    max-width: 100%;
-    max-height: 100%;
-    /* object-fit: contain; */
-}
 @media only screen and (max-width: 1200px) and (min-width:920px){
     .card{
         width: 40%;
@@ -51,22 +45,18 @@ h2{
 
 
 
-/* CODE BUTTONS STYLING */
+/* SITE AND SOURCE CODE BUTTONS STYLING */
 .code-buttons{
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 .code-buttons button{
     background-color:rgb(10, 25, 47);
-    border: solid 1px #64ffda;
+    padding: 4px 6px;
     border-radius: 3px;
-    margin-right: 0.75rem;
-    padding: 7px 10px;
+    border: none;
 }
-.code-buttons a{
-    font-family: 'Roboto Mono', monospace;
-    letter-spacing: 0.1rem;
-    text-decoration: none;
-    color: rgb(100, 255, 218);
+.code-buttons img{
+    width: 25px;
 }
 .code-buttons button:hover{
     background-color: rgba(100, 255, 218, 0.4);
@@ -82,7 +72,9 @@ h2{
     background-color: rgb(10, 25, 47);
 }
 
-/* STYLING OF GITHUB BUTTON */
+
+
+/* STYLING OF SEE OLDER PROJECTS ON GITHUB BUTTON */
 .github-button{
     background-color:rgb(10, 25, 47);
     border: solid 1px #64ffda;
