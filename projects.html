@@ -3,20 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
-
   <title>Julia Grandury</title>
-
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="./projects.css">
   <!-- Roboto Mono -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap" rel="stylesheet">
   <!-- Roboto -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-
   <!-- SITEWIDE HEADER BEGINNING -->
   <nav class="navbar">
     <div class="logo">JG</div>
@@ -35,91 +33,151 @@
 
 
   <h1>Projects</h1>
-  <section class="card-container">
+  <div class="grid-container">
 
-    <div class='card pw-v1'>
+    <div class="grid-card">
+      <div class="tags-list">
+        <ul>
+          <li>HTML/CSS</li>
+          <li>Javascript</li>
+        </ul>
+      </div>
       <h2>Personal Website v1</h2>
       <p>This is the first iteration of my personal portfolio website.</p>
-      <div class="code-buttons">
-        <button><a target='_blank' href="https://juliagrandury.github.io/"><img src="icon/externallink.png" alt=""></a></button>
-        <button><a target='_blank' href="https://github.com/JuliaGrandury/juliagrandury.github.io"><img src="icon/github.png" alt=""></a></button>
-      </div>
+      <footer>
+        <button><a target='_blank' href="https://github.com/JuliaGrandury/juliagrandury.github.io"><img
+              src="icon/github-grey.png" alt=""></a></button>
+        <button><a target='_blank' href="https://juliagrandury.github.io/"><img src="icon/externallink-grey.png"
+              alt=""></a></button>
+      </footer>
     </div>
 
-    <div class='card'>
-      <h2>Tiger Moth Company Website v2</h2>
-      <p>This is the second iteration of a company website for Tiger Moth, a research consulting firm in
-        the climate and sustainability space.</p>
-      <div class="code-buttons">
-        <button><a target='_blank' href="https://juliagrandury.github.io/tigermoth2_website/"><img src="icon/externallink.png" alt=""></a></button>
-        <button><a target='_blank' href="https://github.com/JuliaGrandury/tigermoth2_website"><img src="icon/github.png" alt=""></a></button>
+    <div class="grid-card">
+      <div class="tags-list">
+        <ul>
+          <li>React.js</li>
+          <li>Javascript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
       </div>
-    </div>
-    
-    <!-- <div class='card'>
-      <h2>Tiger Moth Company Website v3</h2>
-      <p>This is the third iteration of a company website for Tiger Moth, a research consulting firm in
-        the climate and sustainability space.</p>
-    </div> -->
-
-    <div class='card'>
-      <h2>To Do React App</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      <div class="code-buttons">
-        <button><a target='_blank' href="error404.html"><img src="icon/externallink.png" alt=""></a></button>
-        <button><a target='_blank' href="error404.html"><img src="icon/github.png" alt=""></a></button>
-      </div>
+      <h2>To Do React App with Hooks</h2>
+      <p>A simple to do app in React integrating React Hooks. Features include displaying tasks, adding new tasks,
+        marking tasks as complete and removing tasks.</p>
+      <footer>
+        <button><a target='_blank' href="https://github.com/JuliaGrandury/todo-reactapp"><img src="icon/github-grey.png"
+              alt=""></a></button>
+      </footer>
     </div>
 
-    <div class='card'>
+    <div class="grid-card">
+      <div class="tags-list">
+        <ul>
+          <li>Node.js</li>
+          <li>Puppeteer</li>
+          <li>Cheerio</li>
+        </ul>
+      </div>
+      <h2>Web Scraper and Reservation Bot</h2>
+      <p>This is a web scraper in Node.js using puppeteer and cheerio.</p>
+      <footer>
+        <button><a target='_blank' href="https://github.com/JuliaGrandury/web-scraperandbot"><img
+              src="icon/github-grey.png" alt=""></a></button>
+      </footer>
+    </div>
+
+    <div class="grid-card">
+      <div class="tags-list">
+        <ul>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>Pokemon API</li>
+        </ul>
+      </div>
+      <h2>Pokemon Game</h2>
+      <p>Simple game using the Pokemon API in Node.js and Express.js</p>
+      <footer>
+        <button><a target='_blank' href="https://github.com/JuliaGrandury/web-scraperandbot"><img
+              src="icon/github-grey.png" alt=""></a></button>
+      </footer>
+    </div>
+
+    <div class="grid-card">
+      <div class="tags-list">
+        <ul>
+          <li>HTML/CSS</li>
+          <li>Javascript</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
       <h2>ACG Art Website</h2>
       <p>Portfolio website to explore an upcoming artist's pieces, their story, and more.</p>
-      <div class="code-buttons">
-        <button><a target='_blank' href="error404.html"><img src="icon/externallink.png" alt=""></a></button>
-        <button><a target='_blank' href="error404.html"><img src="icon/github.png" alt=""></a></button>
-      </div>
+      <footer>
+        <button><a target='_blank' href="error404.html"><img src="icon/github-grey.png" alt=""></a></button>
+        <button><a target='_blank' href="error404.html"><img src="icon/externallink-grey.png" alt=""></a></button>
+      </footer>
     </div>
 
-    <div class='card'>
+    <div class="grid-card">
+      <div class="tags-list">
+        <ul>
+          <li>HTML/CSS</li>
+        </ul>
+      </div>
+      <h2>Tiger Moth Website v2</h2>
+      <p>This is the second iteration of a company website for Tiger Moth, a research consulting firm in
+        the climate and sustainability space.</p>
+      <footer>
+        <button><a target='_blank' href="https://github.com/JuliaGrandury/tigermoth2_website"><img src="icon/github-grey.png" alt=""></a></button>
+        <button><a target='_blank' href="https://juliagrandury.github.io/tigermoth2_website/"><img src="icon/externallink-grey.png" alt=""></a></button>
+      </footer>
+    </div>
+
+    <div class="grid-card">
+      <div class="tags-list">
+        <ul>
+          <li>Python</li>
+          <li>Jupyter Notebook</li>
+        </ul>
+      </div>
       <h2>Python & Machine Learning: Building a Movie Recommendation Engine</h2>
       <p>Project aiming to create a movie recommendation engine in Python and Jupyter Notebook using the pandas
-        and scikit-learn libraries and the MovieLens dataset.
-      </p>
-      <div class="code-buttons">
-        <button><a target='_blank' href="error404.html"><img src="icon/externallink.png" alt=""></a></button>
-        <button><a target='_blank' href="error404.html"><img src="icon/github.png" alt=""></a></button>
-      </div>
+        and scikit-learn libraries and the MovieLens dataset.</p>
+      <footer>
+        <button><a target='_blank' href="https://github.com/JuliaGrandury/tigermoth2_website"><img src="icon/github-grey.png" alt=""></a></button>
+      </footer>
     </div>
 
-    <div class='card'>
+    <div class="grid-card">
+      <div class="tags-list">
+        <ul>
+          <li>React.js</li>
+          <li>Spotify API</li>
+        </ul>
+      </div>
       <h2>Spotify Music Player</h2>
-      <p>Project using Spotify Developer API aiming to develop a music player and recommendation engine.
-      </p>
-      <!-- Maybe make it a judge of music taste too -->
+      <p>Project using Spotify Developer API aiming to develop a music player and recommendation engine.</p>
       <!-- Next features would be to imagine a new feature for Spotify that allows users to connect
-        with others that have compatible/similar music tastes.  -->
-      <div class="code-buttons">
-        <button><a target='_blank' href="error404.html"><img src="icon/externallink.png" alt=""></a></button>
-        <button><a target='_blank' href="error404.html"><img src="icon/github.png" alt=""></a></button>
-      </div>
+        with others that have compatible/similar music tastes. Also make it a music judger. -->
+      <footer>
+        <button><a target='_blank' href="https://github.com/JuliaGrandury/tigermoth2_website"><img src="icon/github-grey.png" alt=""></a></button>
+        <button><a target='_blank' href="https://juliagrandury.github.io/tigermoth2_website/"><img src="icon/externallink-grey.png" alt=""></a></button>
+      </footer>
     </div>
 
-    <div class='card' id='githubcard'>
-      <button class="github-button"><a target="_blank" href="https://github.com/JuliaGrandury">See older projects on my Github</a></button>
-    </div>
+  </div>
+
+  <div class='githubcard'>
+    <button class="github-button"><a target="_blank" href="https://github.com/JuliaGrandury">See older projects on
+        my Github</a></button>
+  </div>
+
+
+  <footer>
+    <p>@Julia Grandury 2021</p>
+  </footer>
 
   </section>
-
-
-
-    <footer>
-      <p>@Julia Grandury 2021</p>
-    </footer>
-
-  </section>
-
-  <!-- LOADING JS FOR THE PAGE -->
-  <script src="projects.js"></script>
 
 </body>
 

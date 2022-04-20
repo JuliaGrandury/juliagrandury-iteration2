@@ -12,51 +12,56 @@
     margin: 0;
 }
 
-/* HEADER STYLING: LOGO AND NAVBAR */
-.logo{
-    font-size: 1.5rem;
-    margin: 0.75rem;
-    color: #0a192f;
+.about a{
+    color: inherit;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 0.75rem;
-}
-.navbar-links ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-.navbar-links li{
-    /* styling of the list elements*/
-    list-style: none;
-}
-.navbar-links li a{ 
-    /* styling of individual links (anchor tags) */
-    text-decoration: none;
-    color: #ccd6f6;
-    padding: 1.5rem;
-    font-size: 14px;
-    font-weight: 300;
-    font-family: 'Roboto Mono', monospace;
-    letter-spacing: 2px;
-}
-.navbar-links li a:hover{
-    color:#64ffda;
+.about a:hover{
+    color: #64ffda;
 }
 
-
-/* BODY STYLING: HEADERS AND ABOUT */
 body{
     font-family: 'Roboto Mono', monospace;
     background-color: #0a192f;
     color: #8892b0;
 }
+
+.contact{
+    display: flex;
+    align-items: center;
+    margin: 5% 0% 5%;
+}
+.contact-icons{
+    width: 35px;
+    padding: 5px;
+    border: solid 1px #64ffda;
+    border-radius: 3px;
+}
+.contact-icons:hover{
+    background-color: rgba(100, 255, 218, 0.4);
+}
+.contact li{
+    list-style: none;
+    padding-right: 10px;
+}
+.contact li a{
+    text-decoration: none;
+    padding: 0 10px;
+}
+.contact ul{
+    display: flex;
+    width: 100%;
+}
+
+
+footer p{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
 .home-container{
     width: 90%;
-    /* first is top, second is right left, third is bottom */
     margin: 4rem 5% 8rem;
 }
 h1{
@@ -71,44 +76,39 @@ h2{
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
 }
-.about a{
-    color: inherit;
-}
-.about a:hover{
-    color: #64ffda;
-}
 
-.typewriter-header{
-    color: #8892b0;
-    margin-top: -3rem;
-    /* typewriter effect */
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 3.5s steps(80, end)
-}
-@keyframes typing {
-    from { width:0 }
-    to { width: 100% }
+.logo{
+    font-size: 1.5rem;
+    margin: 0.75rem;
+    color: #0a192f;
 }
 
 
-/* CONTACT SECTION STYLING */
-.contact{
+.navbar{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin: 5% 0% 5%;
+    padding: 0.5rem 0.75rem;
 }
-.contact ul{
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
     display: flex;
-    width: 100%;
 }
-.contact li{
+.navbar-links li{
     list-style: none;
-    padding-right: 10px;
 }
-.contact li a{
+.navbar-links li a{ 
     text-decoration: none;
-    padding: 0 10px;
+    color: #ccd6f6;
+    padding: 1.5rem;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 2px;
+}
+.navbar-links li a:hover{
+    color:#64ffda;
 }
 
 .resume-button{
@@ -127,25 +127,21 @@ h2{
 .resume-button:hover{
     background-color: rgba(100, 255, 218, 0.4);
 }
-.contact-icons{
-    width: 35px;
-    padding: 5px;
-    border: solid 1px #64ffda;
-    border-radius: 3px;
-}
-.contact-icons:hover{
-    background-color: rgba(100, 255, 218, 0.4);
-}
 
 
-
-/* FOOTER STYLING */
-footer p{
-    text-align: center;
-    font-size: 13px;
-    font-weight: 300;
-    margin-bottom: 3rem;
+.typewriter-header{
+    color: #8892b0;
+    margin-top: -3rem;
+    /* typewriter effect */
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3.5s steps(80, end)
 }
+@keyframes typing {
+    from { width:0 }
+    to { width: 100% }
+}
+
 
 
 

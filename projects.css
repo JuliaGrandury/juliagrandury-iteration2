@@ -1,85 +1,29 @@
-h1{
-    text-align: center;
-    margin-top: 3.5rem;
-    padding-bottom: 1rem;
-    font-size: 40px;
-    color: #ccd6f6;
-    letter-spacing: 0.3rem;
-    font-family: 'Raisonne', sans-serif;
-}
-h2{
-    margin-bottom: 1rem;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-
-/* STYLING OF CARDS */
-.card-container{
-    width: 90%;
-    margin: 2% 5%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.card{
-    font-size: 14px;
-    width: 30%;
-    margin: 1rem 1rem;
-    border: solid 1px #64ffda;
-    border-radius: 3px;
-    padding: 2rem;
-}
-/* .card:hover{
-    background-color: rgba(6, 7, 7, 0.2);
-} */
-@media only screen and (max-width: 1200px) and (min-width:920px){
-    .card{
-        width: 40%;
-    }
-}
-@media only screen and (max-width: 920px){
-    .card{
-        width: 100%;
-    }
-}
-
-
-
-
-/* SITE AND SOURCE CODE BUTTONS STYLING */
-.code-buttons{
+footer button{
+    background-color:rgb(17, 34, 64);
+    border: none;
     margin-top: 2rem;
 }
-.code-buttons button{
-    background-color:rgb(10, 25, 47);
-    padding: 4px 6px;
-    border-radius: 3px;
-    border: none;
-}
-.code-buttons img{
+footer button img{
     width: 25px;
 }
-.code-buttons button:hover{
-    background-color: rgba(100, 255, 218, 0.4);
+.githubcard{
+    width: 90%;
+    margin: 5% 5%;
 }
-
-
-
-/* SPECIFIC GTIHUB CARD */
-#githubcard{
-    border: none;
-}
-#githubcard:hover{
-    background-color: rgb(10, 25, 47);
-}
-
-
-
-/* STYLING OF SEE OLDER PROJECTS ON GITHUB BUTTON */
 .github-button{
     background-color:rgb(10, 25, 47);
     border: solid 1px #64ffda;
     border-radius: 3px;
     padding: 8px 8px;
+    position: relative;
+    top: 40%;
+    left: 40%;
 }
 .github-button a{
     font-family: 'Roboto Mono', monospace;
@@ -89,4 +33,69 @@ h2{
 }
 .github-button:hover{
     background-color: rgba(100, 255, 218, 0.4);
+}
+.grid-container{
+    display: grid;
+    column-gap: 15px;
+    row-gap: 15px;
+    width: 80%;
+    margin: auto 10% 5%;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.grid-card{
+    border: 1px solid black;
+    background-color: rgb(17, 34, 64);
+    text-align: left;
+    padding: 2rem;
+}
+.grid-container h2{
+    color: #ccd6f6;
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+.grid-container h2:hover{
+    color: #64ffda;
+}
+.grid-container p{
+    font-size: 15px;
+    color: rgb(168, 178, 209);
+}
+h1{
+    text-align: center;
+    margin-top: 3.5rem;
+    padding-bottom: 1rem;
+    font-size: 40px;
+    color: #ccd6f6;
+    letter-spacing: 0.3rem;
+    font-family: 'Raisonne', sans-serif;
+}
+.tags-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.tags-list ul{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.tags-list li{
+    list-style: none;  
+    background-color: #0a192f;
+    color: #a8b2d1;
+    border-radius: 3px;
+    font-size: 10px;
+    margin-right: 6px;
+    padding: 3px 8px;
+    border: 0.5px solid #a8b2d1;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    h2{
+        font-size: 15px;
+    }
+    p{
+        font-size: 12px;
+    }
 }
