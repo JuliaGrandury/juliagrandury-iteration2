@@ -21,7 +21,7 @@
 }
 
 .about p{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 body {
@@ -68,20 +68,6 @@ footer p {
     margin-bottom: 3rem;
 }
 
-.hamburger {
-    display: none;
-}
-
-.hamburger .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #64ffda;
-}
-
 html {
     font-size: 62.5%;
     background-color: #0a192f;
@@ -89,13 +75,12 @@ html {
 
 .home-container {
     padding: 6rem;
-    margin-top: 3%;
 }
 
 h1 {
     color: #ffffffe6;
     font-family: 'Raisonne', sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     letter-spacing: 0.25rem;
     line-height: 10rem;
 }
@@ -103,44 +88,7 @@ h1 {
 h2 {
     color: #64ffda;
     font-family: 'Roboto Mono', monospace;
-    font-size: 20px;
-}
-
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-menu li {
-    list-style: none;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 2rem;
-}
-
-.nav-logo {
-    color: #0a192f;
-}
-
-.nav-item a {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 400;
-    color: #ccd6f6;
-    letter-spacing: 0.25rem;
-}
-
-.nav-item {
-    margin-left: 6rem;
-}
-
-.nav-link:hover {
-    color: #64ffda;
+    font-size: 18px;
 }
 
 .resume-button {
@@ -197,44 +145,6 @@ h2 {
 }
 
 @media only screen and (max-width: 768px) {
-
-    /* Responsiveness of navbar */
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: rgb(17, 34, 64);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-item {
-        margin: 2.5rem 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
     /* Display of footer and contact area */
     .contact ul {
         margin-top: 5%;
