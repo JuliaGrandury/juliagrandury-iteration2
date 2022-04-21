@@ -4,10 +4,17 @@
     margin: 0;
 }
 
+.clickable-divs{
+    cursor: pointer;
+}
+.clickable-divs:hover h2{
+    color: #64ffda;
+}
 footer button{
     background-color:rgb(17, 34, 64);
     border: none;
     margin-top: 2rem;
+    margin-right: 0.75rem;
 }
 footer button img{
     width: 25px;
@@ -21,9 +28,8 @@ footer button img{
     border: solid 1px #64ffda;
     border-radius: 3px;
     padding: 8px 8px;
-    position: relative;
-    top: 40%;
-    left: 40%;
+    width: 30%;
+    margin-left: 35%;
 }
 .github-button a{
     font-family: 'Roboto Mono', monospace;
@@ -43,7 +49,7 @@ footer button img{
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 .grid-card{
-    border: 1px solid black;
+    border-radius: 3px;
     background-color: rgb(17, 34, 64);
     text-align: left;
     padding: 2rem;
@@ -52,9 +58,6 @@ footer button img{
     color: #ccd6f6;
     margin-bottom: 1rem;
     font-size: 18px;
-}
-.grid-container h2:hover{
-    color: #64ffda;
 }
 .grid-container p{
     font-size: 15px;
@@ -90,7 +93,22 @@ h1{
     border: 0.5px solid #a8b2d1;
 }
 
-
+@media only screen and (max-width: 768px){
+    /* .grid-container{
+        color: red;
+    }
+    .grid-card{
+        background-color:pink;
+    } */
+    /* .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .grid-card{
+        grid-column: auto;
+        min-width: 260px;
+    } */
+}
 @media only screen and (max-width: 1200px) {
     h2{
         font-size: 15px;

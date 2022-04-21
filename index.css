@@ -2,9 +2,9 @@
     font-family: 'Raisonne';
     src: url("fonts/raisonne/@font-face/05d0872c73920fc4541caa9c7950f686.eot");
     src: url("fonts/raisonne/@font-face/05d0872c73920fc4541caa9c7950f686.woff") format("woff"),
-    url("fonts/raisonne/@font-face/05d0872c73920fc4541caa9c7950f686.ttf") format("ttf"),
-    url("fonts/raisonne/@font-face/05d0872c73920fc4541caa9c7950f686.svg") format("svg");
-    }
+        url("fonts/raisonne/@font-face/05d0872c73920fc4541caa9c7950f686.ttf") format("ttf"),
+        url("fonts/raisonne/@font-face/05d0872c73920fc4541caa9c7950f686.svg") format("svg");
+}
 
 * {
     box-sizing: border-box;
@@ -12,93 +12,103 @@
     margin: 0;
 }
 
-.about a{
+.about a {
     color: inherit;
 }
-.about a:hover{
+
+.about a:hover {
     color: #64ffda;
 }
 
-body{
+body {
     font-family: 'Roboto Mono', monospace;
     background-color: #0a192f;
     color: #8892b0;
 }
 
-.contact{
-    display: flex;
+.contact {
     align-items: center;
     margin: 5% 0% 5%;
 }
-.contact-icons{
+
+.contact-icons {
     width: 35px;
     padding: 5px;
     border: solid 1px #64ffda;
     border-radius: 3px;
 }
-.contact-icons:hover{
+
+.contact-icons:hover {
     background-color: rgba(100, 255, 218, 0.4);
 }
-.contact li{
+
+.contact li {
     list-style: none;
     padding-right: 10px;
 }
-.contact li a{
+
+.contact li a {
     text-decoration: none;
     padding: 0 10px;
 }
-.contact ul{
+
+.contact ul {
     display: flex;
     width: 100%;
 }
 
-
-footer p{
+footer p {
     text-align: center;
     font-size: 13px;
     font-weight: 300;
     margin-bottom: 3rem;
 }
 
-.home-container{
+.home-container {
     width: 90%;
     margin: 4rem 5% 8rem;
 }
-h1{
-    color:#ffffffe6;
+
+h1 {
+    color: #ffffffe6;
     font-family: 'Raisonne', sans-serif;
     font-size: 54px;
     letter-spacing: 0.25rem;
     line-height: 7rem;
 }
-h2{
+
+h2 {
     color: #64ffda;
     font-family: 'Roboto Mono', monospace;
     font-size: 16px;
 }
-
-.logo{
+.icon{
+    display: none;
+}
+.logo {
     font-size: 1.5rem;
     margin: 0.75rem;
     color: #0a192f;
 }
 
-
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 0.75rem;
 }
-.navbar-links ul{
+
+.navbar-links ul {
+    display: flex;
     margin: 0;
     padding: 0;
-    display: flex;
 }
-.navbar-links li{
+
+.navbar-links li {
     list-style: none;
 }
-.navbar-links li a{ 
+
+.navbar-links li a {
     text-decoration: none;
     color: #ccd6f6;
     padding: 1.5rem;
@@ -107,91 +117,138 @@ h2{
     font-family: 'Roboto Mono', monospace;
     letter-spacing: 2px;
 }
-.navbar-links li a:hover{
-    color:#64ffda;
+
+.navbar-links li a:hover {
+    color: #64ffda;
 }
 
-.resume-button{
-    background-color:rgb(10, 25, 47);
+.resume-button {
+    background-color: rgb(10, 25, 47);
     border: solid 1px #64ffda;
     border-radius: 3px;
     margin-right: 0.75rem;
     padding: 8px 8px;
 }
-.resume-button a{
+
+.resume-button a {
     font-family: 'Roboto Mono', monospace;
     letter-spacing: 0.1rem;
     text-decoration: none;
     color: rgb(100, 255, 218);
 }
-.resume-button:hover{
+
+.resume-button:hover {
     background-color: rgba(100, 255, 218, 0.4);
 }
 
-
-.typewriter-header{
+.typewriter-header {
     color: #8892b0;
     margin-top: -3rem;
-    /* typewriter effect */
     overflow: hidden;
     white-space: nowrap;
     animation: typing 3.5s steps(80, end)
 }
+
 @keyframes typing {
-    from { width:0 }
-    to { width: 100% }
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
 }
 
 
 
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+/* ----------------------- MEDIA QUERIES --------------------------------- */
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
 
 @media only screen and (max-width: 1020px) {
-    /* typewriter effect is cut off*/
-    .typewriter-header{
+    .typewriter-header {
         display: none;
     }
 }
 
-@media only screen and (max-width: 700px) {
-    .home-container{
-        width: 80%;
-        margin: 2rem 10%;
+@media only screen and (max-width: 768px) {
+    /* turn navbar into hamburger menu */
+    .navbar {
+        overflow: hidden;
+        position: relative;
+        padding: 1.25rem;
     }
-    h1{
-        font-size: 30px;
-        line-height: normal;
+    .navbar-links {
+        display: none;
     }
-    .about{
-        margin-top: 2rem;
+    .navbar-links a {
+        background-color: #0a192f;
+        color: #64ffda;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
     }
-}
+    .navbar a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .fa-bars{
+        color: white;
+    }
+    /* fix display of contact section */
+    .contact ul {
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 
-@media only screen and (max-width: 550px) {
-    .home-container p{
+    .contact li {
+        padding-top: 1rem;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .home-container p {
         text-align: justify;
         font-size: 14px;
     }
-    .contact button{
+
+    .logo {
         display: none;
     }
-    /* adapt navbar */
-    /* NEED TO MAKE A HAMBURGER MENU BUT FOR NOW STACKING THE NAV LINKS */
-    .logo{
+
+    .resume-button {
         display: none;
-    }
-    .navbar-links ul{
-        margin: 0 80%;
-        width: 90%;
-        display: inline-block;
-        text-align: center;
-    }
-    .navbar-links a{
-        font-size: 12px;
     }
 }
 
+@media only screen and (max-width: 500px) {
+    .about {
+        margin-top: 2rem;
+        padding-right: 1rem;
+    }
 
+    h1 {
+        padding-top: 1rem;
+        font-size: 35px;
+        letter-spacing: 0.25rem;
+        line-height: normal;
+    }
 
+    h2 {
+        font-size: 14px;
+    }
 
-
-
+    .home-container {
+        width: 80vh;
+        margin: 12% 10%;
+    }
+}
