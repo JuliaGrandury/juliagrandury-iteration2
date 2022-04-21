@@ -7,9 +7,9 @@
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .about a {
@@ -18,6 +18,10 @@
 
 .about a:hover {
     color: #64ffda;
+}
+
+.about p{
+    font-size: 18px;
 }
 
 body {
@@ -64,61 +68,78 @@ footer p {
     margin-bottom: 3rem;
 }
 
+.hamburger {
+    display: none;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #64ffda;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: #0a192f;
+}
+
 .home-container {
-    width: 90%;
-    margin: 4rem 5% 8rem;
+    padding: 6rem;
+    margin-top: 3%;
 }
 
 h1 {
     color: #ffffffe6;
     font-family: 'Raisonne', sans-serif;
-    font-size: 54px;
+    font-size: 60px;
     letter-spacing: 0.25rem;
-    line-height: 7rem;
+    line-height: 10rem;
 }
 
 h2 {
     color: #64ffda;
     font-family: 'Roboto Mono', monospace;
-    font-size: 16px;
+    font-size: 20px;
 }
-.icon{
-    display: none;
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.logo {
-    font-size: 1.5rem;
-    margin: 0.75rem;
-    color: #0a192f;
+
+.nav-menu li {
+    list-style: none;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 0.75rem;
+    padding: 2rem 2rem;
 }
 
-.navbar-links ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
+.nav-logo {
+    color: #0a192f;
 }
 
-.navbar-links li {
-    list-style: none;
-}
-
-.navbar-links li a {
+.nav-item a {
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
     color: #ccd6f6;
-    padding: 1.5rem;
-    font-size: 14px;
-    font-weight: 300;
-    font-family: 'Roboto Mono', monospace;
-    letter-spacing: 2px;
+    letter-spacing: 0.25rem;
 }
 
-.navbar-links li a:hover {
+.nav-item {
+    margin-left: 6rem;
+}
+
+.nav-link:hover {
     color: #64ffda;
 }
 
@@ -159,8 +180,6 @@ h2 {
     }
 }
 
-
-
 /* ----------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------- */
 /* ----------------------- MEDIA QUERIES --------------------------------- */
@@ -171,36 +190,52 @@ h2 {
     .typewriter-header {
         display: none;
     }
+
+    #comma {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-    /* turn navbar into hamburger menu */
-    .navbar {
-        overflow: hidden;
-        position: relative;
-        padding: 1.25rem;
+
+    /* Responsiveness of navbar */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: rgb(17, 34, 64);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
     }
-    .navbar-links {
-        display: none;
+
+    .nav-menu.active {
+        left: 0;
     }
-    .navbar-links a {
-        background-color: #0a192f;
-        color: #64ffda;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
         display: block;
+        cursor: pointer;
     }
-    .navbar a.icon {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
     }
-    .fa-bars{
-        color: white;
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
     }
-    /* fix display of contact section */
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Display of footer and contact area */
     .contact ul {
         margin-top: 5%;
         display: flex;
@@ -218,11 +253,7 @@ h2 {
 
     .home-container p {
         text-align: justify;
-        font-size: 14px;
-    }
-
-    .logo {
-        display: none;
+        font-size: 16px;
     }
 
     .resume-button {
@@ -230,7 +261,7 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) and (orientation: portrait) {
     .about {
         margin-top: 2rem;
         padding-right: 1rem;
@@ -245,10 +276,5 @@ h2 {
 
     h2 {
         font-size: 14px;
-    }
-
-    .home-container {
-        width: 80vh;
-        margin: 12% 10%;
     }
 }

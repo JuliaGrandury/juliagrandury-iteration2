@@ -2,81 +2,82 @@
 <html lang="en">
 
 <head>
-  <script src="index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Julia Grandury</title>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Julia Grandury</title>
-
-  <link rel="stylesheet" href="./index.css">
-  <!-- Roboto Mono -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap" rel="stylesheet">
-  <!-- Roboto -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
-  <!-- Library for Hamburger Menu -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="navigation.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <!-- Roboto Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- SITEWIDE HEADER BEGINNING -->
-  <nav class="navbar">
-    <div class="logo">JG</div>
+    <!-- SITEWIDE HEADER BEGINNING -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">JG.</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">about</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">projects</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- SITEWIDE HEADER END -->
 
-    <a href="javascript:void(0);" class="icon" onclick="hamburgerFunction()"><img src="icon/hamburgermenu.png" alt="">
-      <!-- <i class="fa fa-bars fa-1x"></i> -->
-    </a>
-    <div class="navbar-links">
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="projects.html">projects</a></li>
-        <li><a href="contact.html">contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- SITEWIDE HEADER END -->
+    <section class="home-container">
+        <h2>Hey there, my name is</h2>
+        <h1>Julia Grandury<span id="comma">,</span></h1>
+        <h1 class="typewriter-header">and I like to build things...</h1>
+    
+        <section class="about">
+          <p>
+            I first learned to code in 2018 when, working as a research intern in Fluid Mechanics,
+            my lab supervisor suggested that I explore the domain for data analysis. I fell in love
+            with the endless possibilities and opportunities to learn that coding has to offer.
+            As a problem solver, the logical and mathematical approach of programming align with the way I tend to approach
+            challenges:
+            breaking them down into small and achievable goals.
+            <br><br>
+            Currently, I am looking to work in a fast paced environment that will allow me to further sharpen
+            my skills as a developper.
+            My professional areas of interest include but are not limited to <u><a href="error404.html">marine biology and
+                exploration</a></u>,
+            <u><a href="error404.html">racial and gender bias in AI</a></u> and <u><a href="error404.html">access to online
+                mental and physical health care</a></u>.
+          </p>
+        </section>
+    
+        <section class="contact">
+          <ul>
+            <!-- Resume Button -->
+            <li><button class="resume-button" id="download-button"><a href="">Download my Résumé</a></button></li>
+            <!-- Linkedin -->
+            <li><a target="_blank" href="https://www.linkedin.com/in/jgrandury/"><img src="icon/linkedin.png"
+                  class="contact-icons"></a></li>
+            <!-- Github -->
+            <li><a target="_blank" href="https://github.com/JuliaGrandury"><img src="icon/github.png"
+                  class="contact-icons"></a></li>
+            <!-- Email -->
+            <li><a href="mailto:juliagrandury@wustl.edu"><img src="icon/email.png" class="contact-icons"></a></li>
+          </ul>
+        </section>
+    
+        <footer>
+          <p>@Julia Grandury 2021</p>
+        </footer>
+    
+      </section>
 
-  <section class="home-container">
-    <h2>Hey there, my name is</h2>
-    <h1>Julia Grandury,</h1>
-    <h1 class="typewriter-header">and I like to build things...</h1>
-
-
-    <section class="about">
-      <p>
-        I first learned to code in 2018 when, working as a research intern in Fluid Mechanics, 
-        my lab supervisor suggested that I explore the domain for data analysis. I fell in love
-        with the endless possibilities and opportunities to learn that coding has to offer.
-        As a problem solver, the logical and mathematical approach of programming align with the way I tend to approach challenges: 
-        breaking them down into small and achievable goals.  
-        <br><br>
-        Currently, I am looking to work in a fast paced environment that will allow me to further sharpen
-        my skills as a developper.
-        My professional areas of interest include but are not limited to <u><a href="error404.html">marine biology and exploration</a></u>,
-        <u><a href="error404.html">racial and gender bias in AI</a></u> and <u><a href="error404.html">access to online mental and physical health care</a></u>.
-      </p>
-    </section>
-
-    <section class="contact">
-      <ul>
-        <!-- Resume Button -->
-        <li><button class="resume-button" id="download-button"><a href="">Download my Résumé</a></button></li>
-        <!-- Linkedin -->
-        <li><a target="_blank" href="https://www.linkedin.com/in/jgrandury/"><img src="icon/linkedin.png" class="contact-icons"></a></li> 
-        <!-- Github -->
-        <li><a target="_blank" href="https://github.com/JuliaGrandury"><img src="icon/github.png" class="contact-icons"></a></li>
-        <!-- Email -->
-        <li><a href="mailto:juliagrandury@wustl.edu"><img src="icon/email.png" class="contact-icons"></a></li>
-      </ul>
-    </section>
-
-    <footer>
-      <p>@Julia Grandury 2021</p>
-    </footer>
-
-  </section>
-
+    <script src="navigation.js"></script>
 </body>
 
 </html>
