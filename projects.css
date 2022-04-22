@@ -4,66 +4,75 @@
     margin: 0;
 }
 
-.clickable-divs{
-    cursor: pointer;
-}
-.clickable-divs:hover h2{
-    color: #64ffda;
-}
-footer button{
-    background-color:rgb(17, 34, 64);
+footer button {
+    background-color: rgb(17, 34, 64);
     border: none;
     margin-top: 2rem;
     margin-right: 0.75rem;
 }
-footer button img{
+
+footer button img {
     width: 25px;
 }
-.githubcard{
+
+.githubcard {
     width: 90%;
     margin: 5% 5%;
 }
-.github-button{
-    background-color:rgb(10, 25, 47);
+
+.github-button {
+    background-color: rgb(10, 25, 47);
     border: solid 1px #64ffda;
     border-radius: 3px;
     padding: 8px 8px;
     width: 30%;
     margin-left: 35%;
 }
-.github-button a{
+
+.github-button a {
     font-family: 'Roboto Mono', monospace;
     letter-spacing: 0.1rem;
     text-decoration: none;
     color: rgb(100, 255, 218);
 }
-.github-button:hover{
+
+.github-button:hover {
     background-color: rgba(100, 255, 218, 0.4);
 }
-.grid-container{
+
+.grid-container {
     display: grid;
     column-gap: 15px;
     row-gap: 15px;
     width: 80%;
     margin: auto 10% 5%;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
 }
-.grid-card{
+
+.grid-card {
     border-radius: 3px;
     background-color: rgb(17, 34, 64);
     text-align: left;
     padding: 2rem;
+    cursor: pointer;
 }
-.grid-container h2{
+
+.grid-card:hover h2 {
+    color: #64ffda;
+}
+
+.grid-container h2 {
     color: #ccd6f6;
     margin-bottom: 1rem;
     font-size: 18px;
 }
-.grid-container p{
+
+.grid-container p {
     font-size: 15px;
     color: rgb(168, 178, 209);
 }
-h1{
+
+h1 {
     text-align: center;
     margin-top: 3.5rem;
     padding-bottom: 1rem;
@@ -72,18 +81,21 @@ h1{
     letter-spacing: 0.3rem;
     font-family: 'Raisonne', sans-serif;
 }
-.tags-list{
+
+.tags-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
 }
-.tags-list ul{
+
+.tags-list ul {
     display: flex;
     margin-bottom: 2rem;
 }
-.tags-list li{
-    list-style: none;  
+
+.tags-list li {
+    list-style: none;
     background-color: #0a192f;
     color: #a8b2d1;
     border-radius: 3px;
@@ -93,7 +105,7 @@ h1{
     border: 0.5px solid #a8b2d1;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
     /* .grid-container{
         color: red;
     }
@@ -109,11 +121,13 @@ h1{
         min-width: 260px;
     } */
 }
+
 @media only screen and (max-width: 1200px) {
-    h2{
+    h2 {
         font-size: 15px;
     }
-    p{
+
+    p {
         font-size: 12px;
     }
 }

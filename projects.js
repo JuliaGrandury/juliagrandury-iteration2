@@ -1,28 +1,31 @@
 // Making the project divs clickable
-
-window.onload = function(){
-    var element = document.getElementsByClassName('clickable-divs');
-    element.onclick = openProject(id);
-    document.getElementById('id').style.backgroundColor = "blue";
-    
-}
-
-function openProject(id){
-    switch(id){
-        case '1':
-            window.open('https://juliagrandury.github.io/tigermoth2_website/', '_blank');
+function openProject(pageId) {
+    switch (pageId) {
+        case 1:
+            window.open('https://www.netflix.com/');
             break;
-        case '2':
+        case 2:
+            window.open('https://www.netflix.com/');
             break;
-        case '3':
+        case 3:
+            window.open('https://www.netflix.com/');
             break;
-        case '4':
+        case 4:
+            window.open('https://www.netflix.com/');
             break;
-        case '5':
+        case 5:
+            window.open('https://www.netflix.com/');
             break;
-        case '6':
+        case 6:
+            window.open('https://www.netflix.com/');
+            break;
+        case 7:
+            window.open('https://www.netflix.com/');
+            break;
+        case 8:
+            window.open('https://www.netflix.com/');
+            break;
+        default:
             break;
     }
 }
-
-

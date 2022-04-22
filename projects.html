@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Julia Grandury</title>
   <link rel="icon" href="images/404.png">
+
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="./navbar.css">
   <link rel="stylesheet" href="./projects.css">
@@ -48,7 +49,7 @@
   <h1>Projects</h1>
   <div class="grid-container">
 
-    <div class="grid-card clickable-divs">
+    <div class="grid-card" onclick="openProject(1)">
       <div class="tags-list">
         <ul>
           <li>HTML/CSS</li>
@@ -65,24 +66,7 @@
       </footer>
     </div>
 
-    <div class="grid-card clickable-divs">
-      <div class="tags-list">
-        <ul>
-          <li>React.js</li>
-          <li>Javascript</li>
-          <li>HTML/CSS</li>
-        </ul>
-      </div>
-      <h2>To Do React App with Hooks</h2>
-      <p>A simple to do app in React integrating React Hooks. Features include displaying tasks, adding new tasks,
-        marking tasks as complete and removing tasks.</p>
-      <footer>
-        <button><a target='_blank' href="https://github.com/JuliaGrandury/todo-reactapp"><img src="icon/github-grey.png"
-              alt=""></a></button>
-      </footer>
-    </div>
-
-    <div class="grid-card clickable-divs">
+    <div class="grid-card" onclick="openProject(2)">
       <div class="tags-list">
         <ul>
           <li>Node.js</li>
@@ -99,7 +83,24 @@
       </footer>
     </div>
 
-    <div class="grid-card clickable-divs">
+    <div class="grid-card" onclick="openProject(3)">
+      <div class="tags-list">
+        <ul>
+          <li>React.js</li>
+          <li>Javascript</li>
+          <li>HTML/CSS</li>
+        </ul>
+      </div>
+      <h2>To Do React App with Hooks</h2>
+      <p>A simple to do app in React integrating React Hooks. Features include displaying tasks, adding new tasks,
+        marking tasks as complete and removing tasks.</p>
+      <footer>
+        <button><a target='_blank' href="https://github.com/JuliaGrandury/todo-reactapp"><img src="icon/github-grey.png"
+              alt=""></a></button>
+      </footer>
+    </div>
+
+    <div class="grid-card" onclick="openProject(4)">
       <div class="tags-list">
         <ul>
           <li>Node.js</li>
@@ -114,7 +115,7 @@
       </footer>
     </div>
 
-    <div class="grid-card clickable-divs ">
+    <div class="grid-card" onclick="openProject(5)">
       <div class="tags-list">
         <ul>
           <li>HTML/CSS</li>
@@ -132,7 +133,7 @@
       </footer>
     </div>
 
-    <div class="grid-card clickable-divs">
+    <div class="grid-card" onclick="openProject(6)">
       <div class="tags-list">
         <ul>
           <li>HTML/CSS</li>
@@ -149,7 +150,7 @@
       </footer>
     </div>
 
-    <div class="grid-card clickable-divs">
+    <div class="grid-card" onclick="openProject(7)">
       <div class="tags-list">
         <ul>
           <li>Python</li>
@@ -164,7 +165,7 @@
       </footer>
     </div>
 
-    <div class="grid-card clickable-divs">
+    <div class="grid-card clickable-divs" onclick="openProject(8)">
       <div class="tags-list">
         <ul>
           <li>React.js</li>
@@ -196,8 +197,6 @@
   </section>
 
   <script src="projects.js"></script>
-
   <script src="navigation.js"></script>
 </body>
-
 </html>
