@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Raisonne';
-    src: url("fonts/raisonne/@font-face/05d0872c73920fc4541caa9c7950f686.eot");
-    src: url("fonts/raisonne/@font-face/05d0872c73920fc4541caa9c7950f686.woff") format("woff"),
-        url("fonts/raisonne/@font-face/05d0872c73920fc4541caa9c7950f686.ttf") format("ttf"),
-        url("fonts/raisonne/@font-face/05d0872c73920fc4541caa9c7950f686.svg") format("svg");
+    src: url("../fonts/raisonne/@font-face/05d0872c73920fc4541caa9c7950f686.eot");
+    src: url("../fonts/raisonne/@font-face/05d0872c73920fc4541caa9c7950f686.woff") format("woff"),
+        url("../fonts/raisonne/@font-face/05d0872c73920fc4541caa9c7950f686.ttf") format("ttf"),
+        url("../fonts/raisonne/@font-face/05d0872c73920fc4541caa9c7950f686.woff") format("svg");
 }
 
 * {
