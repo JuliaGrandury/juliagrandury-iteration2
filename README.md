@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-  <a href="https://juliagrandury.github.io/"><h3 align="center">Welcome to my Portfolio!</h3></a>
+  <a href="https://juliagrandury.github.io/"><h3 align="center">Welcome to my Portfolio👋</h3></a>
   <p align="center">
     Feel free to click around and learn more about me!
     <br />
