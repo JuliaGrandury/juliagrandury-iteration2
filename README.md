@@ -1,6 +1,15 @@
-# juliagrandury.github.io
-
-
+<br />
+<div align="center">
+  <a href="https://juliagrandury.github.io/"><h3 align="center">Welcome to my Portfolio!</h3></a>
+  <p align="center">
+    Feel free to click around and learn more about me!
+    <br />
+    <br />
+    <a href="https://github.com/JuliaGrandury/juliagrandury.github.io/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/JuliaGrandury/juliagrandury.github.io/issues">Request Feature</a>
+  </p>
+</div>
 
 ## Font Pairings
 - <a href="https://www.typewolf.com/raisonne">Raisonné</a>
