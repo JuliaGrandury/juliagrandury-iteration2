@@ -6,7 +6,8 @@
 
     <title>Julia Grandury</title>
 
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <!-- Roboto Mono -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap" rel="stylesheet">
     <!-- Roboto -->
@@ -16,18 +17,30 @@
 
 <body>
     <!-- SITEWIDE HEADER BEGINNING -->
-    <nav class="navbar">
-        <div class="logo">JG</div>
-
-        <div class="navbar-links">
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="projects.html">projects</a></li>
-                <li><a href="contact.html">contact</a></li>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">JG</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">about</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">contact</a>
+                </li>
             </ul>
-        </div>
-    </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
     <!-- SITEWIDE HEADER END -->
 
     <section class='container' style='width:80%; margin: 7% 10%'>
