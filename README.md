@@ -19,7 +19,7 @@
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
-| <turquoise>Turquoise</turquoise>      | `#64ffda` |
+| Turquoise      | `#64ffda` |
 | Light Navy     | `#233554` |
 | Navy           | `#112240` |
 | Dark Navy      | `#0a192f` |
@@ -28,8 +28,3 @@
 | Dark Gray      | `#8892b0` |
 | White          | `#e6f1ff` |
 
-
-<style>
-turquoise { color: #64ffda }
-lightnavy { color: #233554 }
-</style>
