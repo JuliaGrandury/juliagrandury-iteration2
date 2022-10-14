@@ -19,12 +19,12 @@
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
-| Turquoise      | <img src="./assets/paletteicons/turquoise.png" width="15" height="15" /> `#64ffda` |
-| Light Navy     | <img src="./assets/paletteicons/lightnavy.png"/> `#233554` |
-| Navy           | <img src="./assets/paletteicons/navy.png"/> `#112240` |
-| Dark Navy      | <img src="./assets/paletteicons/darknavy.png"/> `#0a192f` |
-| Light Gray     | <img src="./assets/paletteicons/lightgray.png"/> `#ccd6f6` |
-| Gray           | <img src="./assets/paletteicons/gray.png"/> `#a8b2d1` |
-| Dark Gray      | <img src="./assets/paletteicons/darkgray.png"/> `#8892b0` |
-| White          | <img src="./assets/paletteicons/white.png"/> `#e6f1ff` |
+| Turquoise      | <img src="./assets/paletteicons/turquoise.png" width="20" height="20" /> `#64ffda` |
+| Light Navy     | <img src="./assets/paletteicons/lightnavy.png" width="20" height="20" /> `#233554` |
+| Navy           | <img src="./assets/paletteicons/navy.png" width="20" height="20" /> `#112240` |
+| Dark Navy      | <img src="./assets/paletteicons/darknavy.png" width="20" height="20" /> `#0a192f` |
+| Light Gray     | <img src="./assets/paletteicons/lightgray.png" width="20" height="20" /> `#ccd6f6` |
+| Gray           | <img src="./assets/paletteicons/gray.png" width="20" height="20" /> `#a8b2d1` |
+| Dark Gray      | <img src="./assets/paletteicons/darkgray.png" width="20" height="20" /> `#8892b0` |
+| White          | <img src="./assets/paletteicons/white.png" width="20" height="20" /> `#e6f1ff` |
 
