@@ -19,7 +19,7 @@
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
-| Turquoise      | `#64ffda` |
+| Turquoise      | <img src="https://img.icons8.com/ios-glyphs/30/000000/100-percents.png"/> `#64ffda` |
 | Light Navy     | `#233554` |
 | Navy           | `#112240` |
 | Dark Navy      | `#0a192f` |
