@@ -19,7 +19,7 @@
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
-| Turquoise      | `#64ffda` |
+| Turquoise      | <img src="./assets/paletteicons/turquoise.png"/> `#64ffda` |
 | Light Navy     | `#233554` |
 | Navy           | `#112240` |
 | Dark Navy      | `#0a192f` |
