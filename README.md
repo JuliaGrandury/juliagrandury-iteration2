@@ -19,7 +19,7 @@
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
-| Turquoise      | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+| Turquoise      | <img src="https://img.icons8.com/ios-glyphs/30/000000/360-degrees.png"/> `#64ffda` |
 | Light Navy     | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |
 | Navy           | ![#112240](https://via.placeholder.com/10/0a192f?text=+) `#112240` |
 | Dark Navy      | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
