@@ -20,11 +20,11 @@
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
 | Turquoise      | <img src="./assets/paletteicons/turquoise.png"/> `#64ffda` |
-| Light Navy     | `#233554` |
-| Navy           | `#112240` |
-| Dark Navy      | `#0a192f` |
-| Light Gray     | `#ccd6f6` |
-| Gray           | `#a8b2d1` |
-| Dark Gray      | `#8892b0` |
-| White          | `#e6f1ff` |
+| Light Navy     | <img src="./assets/paletteicons/lightnavy.png"/> `#233554` |
+| Navy           | <img src="./assets/paletteicons/navy.png"/> `#112240` |
+| Dark Navy      | <img src="./assets/paletteicons/darknavy.png"/> `#0a192f` |
+| Light Gray     | <img src="./assets/paletteicons/lightgray.png"/> `#ccd6f6` |
+| Gray           | <img src="./assets/paletteicons/gray.png"/> `#a8b2d1` |
+| Dark Gray      | <img src="./assets/paletteicons/darkgray.png"/> `#8892b0` |
+| White          | <img src="./assets/paletteicons/white.png"/> `#e6f1ff` |
 
