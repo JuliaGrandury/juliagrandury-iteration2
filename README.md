@@ -19,7 +19,7 @@
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
-| Turquoise      | <img src="./assets/paletteicons/turquoise.png" width="30" height="30"/> `#64ffda` |
+| Turquoise      | <img src="./assets/paletteicons/turquoise.png" width="20" height="20"/> `#64ffda` |
 | Light Navy     | <img src="./assets/paletteicons/lightnavy.png"/> `#233554` |
 | Navy           | <img src="./assets/paletteicons/navy.png"/> `#112240` |
 | Dark Navy      | <img src="./assets/paletteicons/darknavy.png"/> `#0a192f` |
